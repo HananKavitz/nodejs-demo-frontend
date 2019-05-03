@@ -18,7 +18,7 @@ export default class ImageGalleryContainer extends React.Component<ImageGalleryC
     }
   }
   componentDidMount(){
-    axios.get('/images').
+    axios.get('/imagesInBucket').
         then((res: AxiosResponse) => {
             this.setState({
               imagesURLs: res.data

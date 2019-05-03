@@ -19,10 +19,10 @@ export default class ImageGallery extends React.Component<Props, State> {
         //     }
         // );
         console.log(this.props.imagesURLs);
-        const imageContainer = this.props.imagesURLs.map((url: string) => {
+        const imageContainer = this.props.imagesURLs.map((url: string, id:number) => {
             return (
-        <div style={{'margin':'10x','display': 'inline-block'}}> 
-            <img src = {'/' + url} height = '400px' width = '400px' alt = {"MISSING image"}  />
+        <div style={{'margin':'10x','display': 'inline-block'}} key = {id}> 
+            <img src = { url} height = '400px' width = '400px' alt = {"MISSING image"}  />
         </div>);
         });
         return (
