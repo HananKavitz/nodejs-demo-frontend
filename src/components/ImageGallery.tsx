@@ -12,13 +12,6 @@ export default class ImageGallery extends React.Component<Props, State> {
 
     render():JSX.Element {
 
-
-        // let  dictFullPath: Array<Object> = [];
-        // this.props.imagesURLs.forEach((thisPath,i) => {
-        //     dictFullPath[i] = {'url':thisPath};
-        //     }
-        // );
-        console.log(this.props.imagesURLs);
         const imageContainer = this.props.imagesURLs.map((url: string, id:number) => {
             return (
         <div style={{'margin':'10x','display': 'inline-block'}} key = {id}> 
